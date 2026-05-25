@@ -15,13 +15,13 @@ class LOCALUIMANAGER_API ULocalUIManagerSettings : public UDeveloperSettings
     GENERATED_BODY()
 
 protected:
-    UPROPERTY(Config, EditDefaultsOnly, Category = "Settings", meta = (MustImplement = "Interface_ModalWidget"))
+    UPROPERTY(Config, EditDefaultsOnly, Category = "Settings", meta = (MustImplement = "/Script/LocalUIManager.Interface_ModalWidget"))
     TSoftClassPtr<UUserWidget> DefaultAlertWidgetClass;
 
-    UPROPERTY(Config, EditDefaultsOnly, Category = "Settings", meta = (MustImplement = "Interface_ModalWidget"))
+    UPROPERTY(Config, EditDefaultsOnly, Category = "Settings", meta = (MustImplement = "/Script/LocalUIManager.Interface_ModalWidget"))
     TSoftClassPtr<UUserWidget> DefaultConfirmWidgetClass;
 
-    UPROPERTY(Config, EditDefaultsOnly, Category = "Settings", meta = (MustImplement = "Interface_ModalWidget"))
+    UPROPERTY(Config, EditDefaultsOnly, Category = "Settings", meta = (MustImplement = "/Script/LocalUIManager.Interface_ModalWidget"))
     TSoftClassPtr<UUserWidget> DefaultPromptWidgetClass;
 
 public:
